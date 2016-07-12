@@ -1,6 +1,8 @@
 package com.carvalho.education.hbc;
 
 import android.app.Application;
+
+import com.raizlabs.android.dbflow.config.FlowConfig;
 import com.raizlabs.android.dbflow.config.FlowManager;
 
 /**

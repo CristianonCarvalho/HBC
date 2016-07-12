@@ -1,10 +1,11 @@
-package com.carvalho.education.hbc;
+package com.carvalho.education.hbc.estudolist.ui;
 
 import android.support.annotation.IdRes;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.carvalho.education.hbc.R;
 import com.raizlabs.android.dbflow.config.FlowManager;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabClickListener;

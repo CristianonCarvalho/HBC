@@ -22,6 +22,8 @@ public class Estudo extends BaseModel{
     @Column private Time time;
     @Column private String comment;
 
+    private boolean pinned;
+
     public String getEstudoID() {
         return estudoID;
     }
@@ -54,6 +56,13 @@ public class Estudo extends BaseModel{
         this.comment = comment;
     }
 
+    public boolean isPinned() {
+        return pinned;
+    }
+
+    public void setPinned(boolean pinned) {
+        this.pinned = pinned;
+    }
     @Override
     public boolean equals(Object obj){
         boolean equal = false;
