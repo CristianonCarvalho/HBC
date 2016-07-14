@@ -7,7 +7,6 @@ import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
-import java.sql.Time;
 import java.util.Date;
 
 /**
@@ -19,7 +18,8 @@ public class Estudo extends BaseModel{
     @PrimaryKey private String estudoID;
 
     @Column private Date date;
-    @Column private Time time;
+    @Column
+    private String time;
     @Column private String comment;
 
     private boolean pinned;
@@ -40,11 +40,11 @@ public class Estudo extends BaseModel{
         this.date = date;
     }
 
-    public Time getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+    public void setTime(String time) {
         this.time = time;
     }
 

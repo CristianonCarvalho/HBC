@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HBC</string>
+    <string name="estudolist.menu.action.main">Escolher Estudo</string>
+    <string name="menu.action.logout">logout</string>
 </resources>
