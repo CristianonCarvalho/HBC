@@ -95,49 +95,7 @@ public class EstudoListActivity extends AppCompatActivity implements EstudoListV
     }
 
     private void setupInjection() {
-        Estudo estudo = new Estudo();
-        estudo.setComment("Direito Administrativo");
-        estudo.setDate(new Date());
-        estudo.setEstudoID("1");
-        estudo.setTime("18:00");
 
-        Estudo estudo2 = new Estudo();
-        estudo2.setComment("Direito Tributario");
-        estudo2.setDate(new Date());
-        estudo2.setEstudoID("2");
-        estudo2.setTime("18:45");
-        adapter = new EstudoAdapter(Arrays.asList(estudo, estudo2), this);
-        presenter = new EstudoListPresenter() {
-            @Override
-            public void onCreate() {
-
-            }
-
-            @Override
-            public void onDestroy() {
-
-            }
-
-            @Override
-            public void getEstudos() {
-
-            }
-
-            @Override
-            public void removeEstudo(Estudo estudo) {
-
-            }
-
-            @Override
-            public void onEventMainThread(EstudoListEvent event) {
-
-            }
-
-            @Override
-            public EstudoListView getView() {
-                return null;
-            }
-        };
     }
 
     private void setupRecyclerView() {
