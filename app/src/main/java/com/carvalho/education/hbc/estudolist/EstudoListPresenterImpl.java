@@ -17,6 +17,13 @@ public class EstudoListPresenterImpl implements EstudoListPresenter {
     private EstudoListInteractor listInteractor;
     private StoredEstudoInteractor storedInteractor;
 
+    public EstudoListPresenterImpl(EventBus eventBus, EstudoListView view, EstudoListInteractor listInteractor, StoredEstudoInteractor storedInteractor) {
+        this.eventBus = eventBus;
+        this.view = view;
+        this.listInteractor = listInteractor;
+        this.storedInteractor = storedInteractor;
+    }
+
     @Override
     public void onCreate() {
         eventBus.register(this);

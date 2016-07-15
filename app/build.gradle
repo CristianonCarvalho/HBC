@@ -45,4 +45,8 @@ dependencies {
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.daimajia.easing:library:1.0.0@aar'
     compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+
+    apt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    compile "javax.annotation:jsr250-api:$rootProject.ext.jsr250Version"
+    compile "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
 }
